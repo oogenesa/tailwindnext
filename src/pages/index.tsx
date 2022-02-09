@@ -1,5 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import BreakpointColorTarget from '../components/responsive-design/media-responsive-button';
+import BreakpointResponsiveCard from '../components/responsive-design/media-responsive-card';
+import ResponsiveImage from '../components/responsive-design/media-responsive-image';
+import DisabledButton from '../components/states/disabled-button';
+import FocusInput from '../components/states/focus-input';
+import HoverButton from '../components/states/hover-button';
 import CssNotification from '../components/utility-first/css-notification';
 import TailwindNotification from '../components/utility-first/tailwind-css-notification';
 
@@ -14,7 +20,12 @@ const Home: NextPage = () => {
       {/* <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Button
       </button> */}
-      <TailwindNotification />
+      {/* <ResponsiveImage /> */}
+      {/* <BreakpointResponsiveCard /> */}
+      <BreakpointColorTarget />
+      <HoverButton />
+      <FocusInput />
+      <DisabledButton />
     </>
   );
 };
